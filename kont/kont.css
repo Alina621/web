@@ -1,0 +1,223 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.menu-main {
+  list-style: none;
+  margin: 40px 0 5px;
+  padding: 25px 0 5px;
+  text-align: center;
+  background: rgb(0, 0, 0);
+}
+
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  content: "|";
+  color: #3ad2dd;
+  display: inline-block;
+  vertical-align:top;
+}
+
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+
+.menu-main a, .menu-main a:visited {color: #ffffff;}
+.menu-main a.current, .menu-main a:hover{color: #00ccff;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #54ebff;
+  transition: .8s;
+}
+
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+    padding: 25px 0 20px; 
+    margin: 0 30px;
+  }
+}
+
+body {
+  background-color: black;
+  background-image: url(../images/23456789.jpg);
+  background-size: cover;
+ 
+  width: 100%;
+}
+
+.koont{
+  margin-top: 5px;
+  font-size: xx-large;
+  text-align: center;
+  color: rgb(104, 225, 255);
+  font-family: 'Caveat', cursive;
+  font-family: 'Cinzel', serif;
+  font-family: 'Cormorant Garamond', serif;
+  font-family: 'EB Garamond', serif;
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.adress{
+  margin-top: 20px;
+  display: flex; 
+  justify-content: center;  
+  align-items: center; 
+  font-size: x-large;
+  color: rgb(81, 174, 255);
+  font-family: 'Caveat', cursive;
+  font-family: 'Cinzel', serif;
+  font-family: 'Cormorant Garamond', serif;
+  font-family: 'EB Garamond', serif;
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.psocial{
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
+
+span{
+  color: rgb(255, 255, 255)
+}
+
+/* Стили для модального окна */
+
+.ui-form {
+  max-width: 650px;
+  padding: 80px 30px 30px;
+  margin: 0 auto;
+  background: rgb(191, 219, 255);
+  font-size: medium;
+  font-family: 'Caveat', cursive;
+  font-family: 'Cinzel', serif;
+  font-family: 'Cormorant Garamond', serif;
+  font-family: 'EB Garamond', serif;
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+.ui-form h3 {
+  position: relative;
+  z-index: 5;
+  margin: 0 0 60px;
+  text-align: center;
+  color: #000000;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.form-row {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.form-row input {
+  display: block;
+  width: 100%;
+  padding: 0 10px;
+  line-height: 40px;
+  font-family: 'Roboto', sans-serif;
+  background: none;
+  border-width: 0;
+  border-bottom: 2px solid #00b2d1;
+  transition: all 0.2s ease;
+}
+
+.form-row label {
+  position: absolute;
+  left: 13px;
+  color: #000147;
+  font-size: 20px;
+  font-weight: 300;
+  transform: translateY(-35px);
+  transition: all 0.2s ease;
+}
+
+.form-row input:focus {
+  outline: 0;
+  border-color: #ffffff;
+}
+
+.form-row input:focus+label, .form-row input:valid+label {
+  transform: translateY(-60px);
+  margin-left: -14px;
+  font-size: 14px;
+  font-weight: 400;
+  outline: 0;
+  border-color: #00f7ff;
+  color: #0051ff;
+}
+
+.ui-form input[type="submit"] {
+  width: 100%;
+  padding: 0;
+  line-height: 42px;
+  background: #548aff;
+  border-width: 0;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+.ui-form p {
+  margin: 0;
+  padding-top: 10px;
+}
+
+
+
+.social img{
+  margin-top: 10px;
+  width: 60px;
+  height: 60px;
+}
+
+h2{
+  text-align: center;
+  color: #ffffff;
+  font-size: 30px;font-family: 'Caveat', cursive;
+  font-family: 'Cinzel', serif;
+  font-family: 'Cormorant Garamond', serif;
+  font-family: 'EB Garamond', serif;
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+iframe{
+  margin-left: 15px ;
+  transform: translate(1000, 0px);
+  border: 7px solid rgb(78, 119, 255);
+}
+
+footer {
+  margin-top: 300px;
+  color: rgb(207, 207, 207);
+  padding: 10px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
